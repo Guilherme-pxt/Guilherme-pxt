@@ -31,7 +31,7 @@ flowchart LR
 | Project | What it shows |
 | --- | --- |
 | [eval-dataset-generator](https://github.com/Guilherme-pxt/eval-dataset-generator) | Turns production LLM logs into a reviewed eval set, scores model versions and blocks regressions in CI. Runs offline on local models. |
-| [hybrid-search-rag](https://github.com/Guilherme-pxt/hybrid-search-rag) | BM25, vector search, RRF fusion and a local LLM reranker, with a citation verifier and a measured ablation on near-duplicate documents. Reranking lifts Recall@1 from 0.56 to 0.90; fusion alone did not help, and the report says so. |
+| [hybrid-search-rag](https://github.com/Guilherme-pxt/hybrid-search-rag) | BM25, vector search, RRF fusion and a local LLM reranker, with a citation verifier and a measured ablation on near-duplicate documents. Reranking lifts Recall@1 from 0.56 to 0.90; a non-generative model (TypeSafe Jev) matches the LLM reranker at 0.25 s instead of 6.7 s per question, for US$0.02 in total. Fusion alone did not help, and the report says so. |
 
 More on the way: text-to-SQL with guardrails, and agent orchestration with human approval.
 
