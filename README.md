@@ -31,8 +31,9 @@ flowchart LR
 | Project | What it shows |
 | --- | --- |
 | [eval-dataset-generator](https://github.com/Guilherme-pxt/eval-dataset-generator) | Turns production LLM logs into a reviewed eval set, scores model versions and blocks regressions in CI. Runs offline on local models. |
+| [hybrid-search-rag](https://github.com/Guilherme-pxt/hybrid-search-rag) | BM25, vector search, RRF fusion and a local LLM reranker, with a citation verifier and a measured ablation on near-duplicate documents. Reranking lifts Recall@1 from 0.56 to 0.90; fusion alone did not help, and the report says so. |
 
-More on the way: hybrid search RAG with a measured ablation, text-to-SQL with guardrails, and agent orchestration with human approval.
+More on the way: text-to-SQL with guardrails, and agent orchestration with human approval.
 
 **Stack:** Python, Node.js, TypeScript, PostgreSQL and pgvector, React, Docker, Prometheus and Grafana, Claude, Gemini, SystemOne, MCP, Apple MLX.
 
