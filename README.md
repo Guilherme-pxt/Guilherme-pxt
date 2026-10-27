@@ -30,7 +30,7 @@ flowchart LR
 
 | Project | What it shows |
 | --- | --- |
-| eval-dataset-generator (publishing soon) | Turns production LLM logs into a reviewed eval set, scores model versions and blocks regressions in CI. Runs offline on local models. |
+| [eval-dataset-generator](https://github.com/Guilherme-pxt/eval-dataset-generator) | Turns production LLM logs into a reviewed eval set, scores model versions and blocks regressions in CI. Runs offline on local models. |
 
 More on the way: hybrid search RAG with a measured ablation, text-to-SQL with guardrails, and agent orchestration with human approval.
 
